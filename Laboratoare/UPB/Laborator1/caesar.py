@@ -25,8 +25,8 @@ def caesar_dec(letter, k = 3):
 	else:
 		return alphabet[(ord(letter) - ord('A') - k) % len(alphabet)]
 
-def caesar_dec_string(cyphertext, k = 3):
-	return "".join(["" + caesar_dec(c, k) for c in cyphertext])
+def caesar_dec_string(ciphertext, k = 3):
+	return "".join(["" + caesar_dec(c, k) for c in ciphertext])
 
 def main():
 	m = 'BINEATIVENIT'
