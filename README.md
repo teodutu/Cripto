@@ -1,6 +1,6 @@
 # Cripto
 [Introducere in Criptologie - UPB 2019-2020](https://ocw.cs.pub.ro/courses/ic)\
-[Criptology I](https://www.coursera.org/learn/crypto)
+[Criptography I - Coursera](https://www.coursera.org/learn/crypto)
 
 ## Laboratoare
 
@@ -8,8 +8,12 @@
 #### 1. Introducere in Python
 - _Shift Cipher_
 - _OTP_
-- conversii intre tipuri de date _Python_: `str` (_ASCII_, hex, binar), `bytes`
+- Conversii intre tipuri de date _Python_: `str` (_ASCII_, hex, binar), `bytes`
 
 ### Coursera
+#### 1. Cifruri pe fluxuri
+- _OTP_
+- _PRG_
+- Securitate semantica
 
 ## Tema
