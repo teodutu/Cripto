@@ -10,6 +10,10 @@
 - _OTP_
 - Conversii intre tipuri de date _Python_: `str` (_ASCII_, hex, binar), `bytes`
 
+
+#### 2. Cifruri Shift + Vigenere
+- Decriptarea unor cifruri criptate folosind un _shift cipher_ 
+
 ### Coursera
 #### 1. Cifruri pe fluxuri
 - _OTP_
