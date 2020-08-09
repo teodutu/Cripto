@@ -11,9 +11,10 @@
 - Conversii intre tipuri de date _Python_: `str` (_ASCII_, hex, binar), `bytes`
 
 #### 2. Cifruri Shift + Vigenere
-- Decriptarea unor cifruri criptate folosind un _shift cipher_
-- Decriptarea unui cifru prin substitutie prin analiza frecventelor literelor
-si a grupurilor de 2 litere
+- **Ex. 1:** Decriptarea unor cifruri criptate folosind un _shift cipher_
+- **Ex. 2 + 3:** Decriptarea unor cifruri prin substitutie prin analiza
+frecventelor literelor si a grupurilor de 2 litere
+- **Ex. 4:** Modificarea unui cifru _OTP_ pentru a altera mesajul incifrat
 
 #### 3. PRG
 
