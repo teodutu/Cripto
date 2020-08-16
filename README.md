@@ -24,4 +24,7 @@ frecventelor literelor si a grupurilor de 2 litere
 - _PRG_
 - Securitate semantica
 
+#### 2. Cifruri bloc
+Decriptarea unui cifru AES in modurile _CBC_ si _CTR_.
+
 ## Tema
