@@ -22,6 +22,12 @@ frecventelor literelor si a grupurilor de 2 litere
 pentru a verifica daca un PRG e sau nu random. Se testeaza cel de la _ex. 1_ si
 unul generat aleator
 
+#### 4. PRF + PRP
+- **Ex. 2:** Se sparge o retea de substitutii si permutari care efectueaza o
+singura operatie de `XOR` cu cheia, la inceput
+- **Ex. 3:** Se sparge o retea de substitutii si permutari care `XOR`-eaza
+inputul cu chei atat inainte, cat si dupa ce face substitutii si permutari
+
 ### Coursera
 #### 1. Cifruri pe fluxuri
 - _OTP_
