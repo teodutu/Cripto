@@ -17,6 +17,10 @@ frecventelor literelor si a grupurilor de 2 litere
 - **Ex. 4:** Modificarea unui cifru _OTP_ pentru a altera mesajul incifrat
 
 #### 3. PRG
+- **Ex. 1:** Spargerea unui PRG ce foloseste un generator liniar
+- **Ex. 3:** Implementarea testului [monobit](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-22r1a.pdf#%5B%7B%22num%22%3A141%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D)
+pentru a verifica daca un PRG e sau nu random. Se testeaza cel de la _ex. 1_ si
+unul generat aleator
 
 ### Coursera
 #### 1. Cifruri pe fluxuri
