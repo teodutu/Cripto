@@ -80,7 +80,7 @@ def bin2hex(bs):
 	"""
 	Transform a bit string into a hex string
 	"""
-	return hex(int(bs,2))[2:]
+	return hex(int(bs, 2))[2:]
 
 def byte2bin(bval):
 	"""
@@ -103,7 +103,7 @@ def permute_inv4(s):
 	Perform the inverse of permute4
 	The input is assumed to be a 16-bit bitstring
 	"""
-	ps = ''
+	ps = ""
 	ps = ps + s[4:16]
 	ps = ps + s[0:4]
 	return ps
@@ -118,7 +118,6 @@ def spn_1r_reduced_2s(k, x):
 	Return:
 	a 16-bit bitstring containing the encryption y = {y1, y2}
 	"""
-
 	# Split input and key
 	x1 = x[0:8]
 	x2 = x[8:16]
@@ -127,11 +126,11 @@ def spn_1r_reduced_2s(k, x):
 
 	# Apply S-box
 	u1 = bitxor(x1, k1)
-	v1 = sbox[int(u1,2)]
+	v1 = sbox[int(u1, 2)]
 	v1 = byte2bin(v1)
 
 	u2 = bitxor(x2, k2)
-	v2 = sbox[int(u2,2)]
+	v2 = sbox[int(u2, 2)]
 	v2 = byte2bin(v2)
 
 	# Apply permutation
@@ -150,9 +149,6 @@ def spn_1r_full_2s(k, x):
 	Return:
 	a 16-bit bitstring containing the encryption y = {y1, y2}
 	"""
-	# print(k)
-	# print(x)
-
 	# Split input and key
 	x1 = x[0:8]
 	x2 = x[8:16]
@@ -163,11 +159,11 @@ def spn_1r_full_2s(k, x):
 
 	# Apply S-box
 	u1 = bitxor(x1, k1)
-	v1 = sbox[int(u1,2)]
+	v1 = sbox[int(u1, 2)]
 	v1 = byte2bin(v1)
 
 	u2 = bitxor(x2, k2)
-	v2 = sbox[int(u2,2)]
+	v2 = sbox[int(u2, 2)]
 	v2 = byte2bin(v2)
 
 	# Apply permutation
@@ -213,11 +209,11 @@ def find_keys_full(ciphertexts, plaintexts):
 				return (keys[0], keys[1], byte2bin(k3), byte2bin(k4))
 
 def decode_snp_reduced():
-	msg = 'Hi'
+	msg = "Hi"
 	ciphertext = "ba52"
 
 	key = find_keys_partial(ciphertext, msg)
-	print("The bits of the key are:", "".join(k for k in key))
+	print("The bits of the key are:", "".join(key))
 
 	key_str = bytes.fromhex(bin2hex(key[0]) + bin2hex(key[1])).decode("ascii")
 	print("The key is \"{}\"".format(key_str))
@@ -234,9 +230,9 @@ def decode_snp_full():
 	msgs = ["Om", "El", "an"]
 	ciphertexts = ["0073", "d00e", "855b"]
 	key = find_keys_full(ciphertexts, msgs)
-	print("The bits of the key are:", "".join(k for k in key))
+	print("The bits of the key are:", "".join(key))
 
-	key_str = bytes.fromhex(bin2hex("".join(k for k in key))).decode("ascii")
+	key_str = bytes.fromhex(bin2hex("".join(key))).decode("ascii")
 	print("The key is \"{}\"".format(key_str))
 
 	# Run full 2-byte SPN
