@@ -98,7 +98,7 @@ def main():
 	m1_given = "Fericiti cei saraci cu duhul, ca"
 	c1 = "cda98e4b247612e5b088a803b4277710f106beccf3d020ffcc577ddd889e2f32"
 
-	# TODO: implement des2_enc and des2_dec
+	# Test des2_dec
 	m1 = des2_dec(key1, key2, bytes.fromhex(c1))
 	print("plaintext1: " + m1.decode("ascii"))
 
@@ -109,7 +109,7 @@ def main():
 	m12 = des2_dec(key1, key2, bytes.fromhex(c1 + c2))
 	print("plaintext1 + 2: " + m12.decode("ascii"))
 
-	# TODO: run meet-in-the-middle attack for the following plaintext/ciphertext
+	# Run meet-in-the-middle attack for the following plaintext/ciphertext
 	m1 = "Pocainta"
 	c1 = "9f98dbd6fe5f785d" # in hex string
 	m2 = "Iertarea"
