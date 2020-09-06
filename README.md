@@ -28,6 +28,11 @@ singura operatie de `XOR` cu cheia, la inceput
 - **Ex. 3:** Se sparge o retea de substitutii si permutari care `XOR`-eaza
 inputul cu chei atat inainte, cat si dupa ce face substitutii si permutari
 
+#### 5. DES
+Se demonstreaza de ce _2DES_ nu e un algoritm sigur. Pentru aceasta, se
+foloseste un atac _meet-in-the-middle_ prin care se determina cele 2 chei
+folosite de _2DES_.
+
 ### Coursera
 #### 1. Cifruri pe fluxuri
 - _OTP_
