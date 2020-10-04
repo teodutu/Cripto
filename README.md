@@ -3,7 +3,6 @@
 [Criptography I - Coursera](https://www.coursera.org/learn/crypto)
 
 ## Laboratoare
-
 ### UPB
 #### 1. Introducere in Python
 - _Shift Cipher_
@@ -33,6 +32,7 @@ Se demonstreaza de ce _2DES_ nu e un algoritm sigur. Pentru aceasta, se
 foloseste un atac _meet-in-the-middle_ prin care se determina cele 2 chei
 folosite de _2DES_.
 
+
 ### Coursera
 #### 1. Cifruri pe fluxuri
 - _OTP_
@@ -41,5 +41,11 @@ folosite de _2DES_.
 
 #### 2. Cifruri bloc
 Decriptarea unui cifru AES in modurile _CBC_ si _CTR_.
+
+#### 3. Hash rezistent la coliziuni
+Se calculeaza hashul unui videoclip pe sectiuni de `1kB`. Acesta se imparte in
+blocuri de `1kB` si porneste de la ultimul, iar la fiecare pas se calculeaza
+hashul blocului curent, adica `SHA256(bloc_precedent + hash_precedent)`.
+Ultimul hash calculat este hashul intregului fisier.
 
 ## Tema
