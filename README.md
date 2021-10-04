@@ -1,9 +1,10 @@
 # Cripto
 [Introducere in Criptologie - UPB 2019-2020](https://ocw.cs.pub.ro/courses/ic)\
+[Appliced Cryptography - UPB 2020-2021](https://ocw.cs.pub.ro/courses/ac)\
 [Criptography I - Coursera](https://www.coursera.org/learn/crypto)
 
 ## Laboratoare
-### UPB
+### IC
 #### 1. Introducere in Python
 - _Shift Cipher_
 - _OTP_
@@ -38,6 +39,12 @@ Se implementeaza un atac de tipul paradoxului zilelor de nastere: pentru a se
 gasi o coliziune la nivelul primelor 4 octeti ai hash-urilor unor mesaje, se
 genereaza grupuri `sqrt(1 << 32) = 1 << 16` mesaje caora li se calculeaza
 hash-urile. Atunci cand se gaseste o coliziune, generarea se opreste.
+
+
+### AC
+#### 1. Introducere in Python
+Fata de [Labul 1 de IC](#1-introducere-in-python), e aceeasi Marie cu alta
+palarie.
 
 
 ### Coursera
