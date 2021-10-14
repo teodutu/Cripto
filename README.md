@@ -47,6 +47,11 @@ Fata de [Labul 1 de IC](#1-introducere-in-python), e aceeasi Marie cu alta
 palarie.
 
 
+#### 2. Vigenere + DES
+Ex 3 din labul 2 + labul 5.
+
+
+
 ### Coursera
 #### 1. Cifruri pe fluxuri
 - _OTP_
